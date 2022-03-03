@@ -51,11 +51,9 @@ function App() {
   return (
     <div>
       <div id="intro">
-        <h1 id="twnText">Twintopia Membership NFT</h1>
-        <h3 id="twnText">You Got a Invitation. Let's Mint your Membership and Join Discord.</h3>
-        <a id="link-text" href="https://synschismo.com">Company Website</a>
-        <br></br><br></br>
-        <a id="link-text" href="https://t.co/4Qs5pWKol2">Discord</a>
+        <h1>Twintopia Membership NFT</h1>
+        <h3>You Got a Invitation. Let's Mint your Membership and <a href="https://t.co/4Qs5pWKol2">Join Discord.</a></h3>   
+        <a id="link-text" href="https://synschismo.com">👉&ensp;synschismo Inc. website</a>
       </div>
       <Grid
         container
@@ -71,6 +69,7 @@ function App() {
             <br></br>
             <div id="contentbox">
               <p id="text-border">① Connect Your Wallet</p>
+              <p>{walletAddress}</p>
               <Button id="button" variant="contained" onClick={connectWalletHandler} style={{ color: "#ffffff", backgroundColor: "#444" }}>Connect Wallet</Button>
             </div>
             <div id="contentbox">
@@ -80,6 +79,7 @@ function App() {
             <div id="contentbox">
               <p id="text-border">③ MINT your Membership</p>
               <Button variant="contained" onClick={mintTWINMBRSHP} style={{ color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
+              <p>Check your Membership at 👉&ensp;<a href="https://testnets.opensea.io/collection/twintopia-membership-rn9ndtpw8l" rel="noreferrer noopener">Opensea</a></p>
             </div>
           </div>
           <div id="imgBox">
