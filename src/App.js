@@ -21,6 +21,11 @@ function App() {
     setTwtrId(() => e.target.value);
   }
 
+  const [inviteAddress, seetInviteAddress] = useState("");
+  const inviteAddressChange = (e) => {
+    seetInviteAddress(() => e.target.value);
+  }
+
   const connectWalletHandler = async () => {
     if (!window.ethereum) {
       console.log("Make sure you have Metamask installed!");
@@ -43,6 +48,15 @@ function App() {
     try {
       let _twtrId = twtrId;
       await contract.mintTWINMBRSHP(_twtrId);
+    } catch(err) {
+      console.log(err);
+    }
+  }
+
+  const invite = async () => {
+    try {
+      let _inviteAddress = inviteAddress;
+      await contract.inviteAddress(_inviteAddress);
     } catch(err) {
       console.log(err);
     }
@@ -80,6 +94,10 @@ function App() {
               <p id="text-border">③ MINT your Membership</p>
               <Button variant="contained" onClick={mintTWINMBRSHP} style={{ color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
               <p>Check your Membership at 👉&ensp;<a href="https://testnets.opensea.io/collection/twintopia-membership-rn9ndtpw8l" rel="noreferrer noopener">Opensea</a></p>
+            </div>
+            <div id="contentbox">
+              <p id="text-border">④ Invite Friend's Address</p>
+              <input id="text-fill" value={inviteAddress} onChange={inviteAddressChange} type="text" />
             </div>
           </div>
           <div id="imgBox">
