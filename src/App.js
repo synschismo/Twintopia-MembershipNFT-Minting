@@ -2,7 +2,6 @@ import { useState } from "react";
 import contractAbi from "./contracts/TwintopiaMembershipNFT.json"
 import {ethers} from "ethers";
 import Button from '@mui/material/Button';
-import Video from './components/Video';
 import Grid from '@mui/material/Grid';
 
 //contract address
@@ -104,7 +103,6 @@ function App() {
             </div>
           </div>
           <div id="imgBox">
-            <Video />
           </div>
         </Grid>
       </Grid> 
