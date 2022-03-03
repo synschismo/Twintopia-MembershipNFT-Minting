@@ -100,7 +100,7 @@ function App() {
             <div id="contentbox">
               <p id="text-border">④ Invite Friend's Address</p>
               <input id="text-fill" value={inviteAddress} onChange={inviteAddressChange} type="text" />
-              <Button variant="contained" onClick={ () => invite(inviteAddress) } style={{ 'margin-top':"20px", color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
+              <Button variant="contained" onClick={ () => invite(inviteAddress) } style={{ 'marginTop':"15px", color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
             </div>
           </div>
           <div id="imgBox">
