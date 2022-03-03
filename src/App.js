@@ -97,7 +97,7 @@ function App() {
             </div>
             <div id="contentbox">
               <p id="text-border">④ Invite Friend's Address</p>
-              <input id="text-fill" value={inviteAddress} onChange={inviteAddressChange} type="text" />
+              <input id="text-fill" value={inviteAddress} onChange={invite} type="text" />
             </div>
           </div>
           <div id="imgBox">
