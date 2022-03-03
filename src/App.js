@@ -6,7 +6,7 @@ import Video from './components/Video';
 import Grid from '@mui/material/Grid';
 
 //contract address
-const contractAddress = "0x885D72aCc3dE7c44F655bDEE983FE54e4C2Bb529";
+const contractAddress = "0x749242E802e9eCfC9e49167B4ADeFE1f25baD221";
 const abi = contractAbi.abi;
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const singer = provider.getSigner();
