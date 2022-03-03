@@ -48,6 +48,7 @@ function App() {
     try {
       let _twtrId = twtrId;
       await contract.mintTWINMBRSHP(_twtrId);
+      window.location.reload();
     } catch(err) {
       console.log(err);
     }
@@ -57,6 +58,7 @@ function App() {
     try {
       let _inviteAddress = inviteAddress;
       await contract.inviteAddress(_inviteAddress);
+      window.location.reload();
     } catch(err) {
       console.log(err);
     }
