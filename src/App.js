@@ -92,12 +92,13 @@ function App() {
             </div>
             <div id="contentbox">
               <p id="text-border">③ MINT your Membership</p>
-              <Button variant="contained" onClick={mintTWINMBRSHP} style={{ color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
+              <Button variant="contained" onClick={ () => mintTWINMBRSHP(twtrId) } style={{ color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
               <p>Check your Membership at 👉&ensp;<a href="https://testnets.opensea.io/collection/twintopia-membership-rn9ndtpw8l" rel="noreferrer noopener">Opensea</a></p>
             </div>
             <div id="contentbox">
               <p id="text-border">④ Invite Friend's Address</p>
-              <input id="text-fill" value={inviteAddress} onChange={invite} type="text" />
+              <input id="text-fill" value={inviteAddress} onChange={inviteAddressChange} type="text" />
+              <Button variant="contained" onClick={ () => invite(inviteAddress) } style={{ 'margin-top':"20px", color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
             </div>
           </div>
           <div id="imgBox">
