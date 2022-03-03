@@ -1,8 +1,0 @@
-{
-  "short_name": "Twintopia Membership NFT",
-  "name": "Twintopia Membership NFT",
-  "start_url": "./public/index.html",
-  "display": "standalone",
-  "theme_color": "#fff",
-  "background_color": "#000"
-}
