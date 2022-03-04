@@ -103,7 +103,7 @@ function App() {
             </div>
           </div>
           <div id="imgBox">
-            <Video />
+            <Video id="video"/>
             <div id="metadataBox">
                 <p></p>
             </div>
