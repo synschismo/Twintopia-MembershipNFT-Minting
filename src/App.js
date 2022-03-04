@@ -6,7 +6,7 @@ import Video from './components/Video';
 import Grid from '@mui/material/Grid';
 
 //contract address
-const contractAddress = "0x749242E802e9eCfC9e49167B4ADeFE1f25baD221";
+const contractAddress = "0xc79F055C76632bA44ded862696353D6fb0F48156";
 const abi = contractAbi.abi;
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const singer = provider.getSigner();
@@ -15,7 +15,6 @@ const contract = new ethers.Contract(contractAddress, abi, singer);
 function App() {
 
   const [walletAddress, setWalletAddress] = useState("No Wallet Connection!");
-  
   const [twtrId, setTwtrId] = useState("");
   const twtrIdChange = (e) => {
     setTwtrId(() => e.target.value);
@@ -105,6 +104,9 @@ function App() {
           </div>
           <div id="imgBox">
             <Video />
+            <div id="metadataBox">
+                <p></p>
+            </div>
           </div>
         </Grid>
       </Grid> 
