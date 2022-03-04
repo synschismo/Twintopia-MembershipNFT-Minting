@@ -93,25 +93,24 @@ function App() {
             </div>
             <div id="contentbox">
               <p id="text-border">③ MINT your Membership</p>
-              <Button variant="contained" onClick={ () => mintTWINMBRSHP(twtrId) } style={{ color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
+              <Button variant="contained" onClick={ () => mintTWINMBRSHP(twtrId) } style={{ color: "#ffffff", backgroundColor: "#444" }}>Mint Membership</Button>
               <p>Check your Membership at 👉&ensp;<a href="https://testnets.opensea.io/collection/twintopia-membership-rn9ndtpw8l" rel="noreferrer noopener">Opensea</a></p>
             </div>
             <div id="contentbox">
               <p id="text-border">④ Invite Friend's Address</p>
               <input id="text-fill" value={inviteAddress} onChange={inviteAddressChange} type="text" />
-              <Button variant="contained" onClick={ () => invite(inviteAddress) } style={{ 'marginTop':"15px", color: "#ffffff", backgroundColor: "#444" }}>mint Membership</Button>
+              <Button variant="contained" onClick={ () => invite(inviteAddress) } style={{ 'marginTop':"15px", color: "#ffffff", backgroundColor: "#444" }}>Invite New Member</Button>
             </div>
           </div>
           <div id="imgBox">
             <Video id="video"/>
             <div id="metadataBox">
-              <h2>Mint Membership</h2>
+              <h2>About Twintopia Membership NFT</h2>
               <br></br>
               <div id="contentbox2">
                 <p id="text-border">⑴ このMembership NFTでは、TwitterIDを紐づけることで、各メンバーのコミュニティを参照可能にします。</p>
                 <p id="text-border">⑵ メンバーは、他の人を招待することができます。招待することで、「招待した数」が増えていきます。</p>
                 <p id="text-border">⑶ プロパティ「Invited By」は誰に招待されたかが示されています。Opensea上で、同じ人に招待されたメンバーを参照することができます。</p>
-                <p id="text-border">⑷ コミュニティに参加した日時も記録されます。参加日時と招待した数をもとに今後優先的なサービスを提供したいと考えています。</p>
               </div>
             </div>
           </div>
