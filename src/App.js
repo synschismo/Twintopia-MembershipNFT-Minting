@@ -6,7 +6,7 @@ import Video from './components/Video';
 import Grid from '@mui/material/Grid';
 
 //contract address
-const contractAddress = "0xc79F055C76632bA44ded862696353D6fb0F48156";
+const contractAddress = "0xE124A870030307bba3899C81Cc766c7e85b137b7";
 const abi = contractAbi.abi;
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const singer = provider.getSigner();
@@ -105,7 +105,14 @@ function App() {
           <div id="imgBox">
             <Video id="video"/>
             <div id="metadataBox">
-                <p></p>
+              <h2>Mint Membership</h2>
+              <br></br>
+              <div id="contentbox2">
+                <p id="text-border">⑴ このMembership NFTでは、TwitterIDを紐づけることで、各メンバーのコミュニティを参照可能にします。</p>
+                <p id="text-border">⑵ メンバーは、他の人を招待することができます。招待することで、「招待した数」が増えていきます。</p>
+                <p id="text-border">⑶ プロパティ「Invited By」は誰に招待されたかが示されています。Opensea上で、同じ人に招待されたメンバーを参照することができます。</p>
+                <p id="text-border">⑷ コミュニティに参加した日時も記録されます。参加日時と招待した数をもとに今後優先的なサービスを提供したいと考えています。</p>
+              </div>
             </div>
           </div>
         </Grid>
