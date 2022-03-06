@@ -112,6 +112,12 @@ function App() {
                 onChange={twtrIdChange}
                 type="text"
               />
+              <div
+                style={{ color: "red", display: isChecked ? "none" : "" }}
+                disabled="false"
+              >
+                ※TwitterのIDを入力してください
+              </div>
             </div>
             <div id="contentbox">
               <p id="text-border">③ MINT your Membership</p>
@@ -127,6 +133,7 @@ function App() {
                 Check your Membership at 👉&ensp;
                 <a
                   href="https://testnets.opensea.io/collection/twintopia-membership-rn9ndtpw8l"
+                  target="_blank"
                   rel="noreferrer noopener"
                 >
                   Opensea
